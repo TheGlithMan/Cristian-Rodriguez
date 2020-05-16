@@ -1,7 +1,6 @@
 {
   "name": "HojadeVida",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +12,14 @@
     "cookie-parser": "^1.4.5",
     "cookie-session": "^1.4.0",
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheGlithMan/Cristian-Rodriguez.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheGlithMan/Cristian-Rodriguez/issues"
+  },
+  "homepage": "https://github.com/TheGlithMan/Cristian-Rodriguez#readme",
+  "description": ""
 }

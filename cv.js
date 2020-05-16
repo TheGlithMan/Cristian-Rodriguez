@@ -1,10 +1,11 @@
-const http = require('http'); 
+const express = require('express'),
+    app = express(),
+    path = require('path');
 
-let controlador = (peticion, respuesta)=>{
-    respuesta.end("Hoja de vida :3");
-};
+    app.use(express.static(path.join(__dirname, "/public")));
+    app.get('/', (peticion, respuesta)=>{
+        respuesta.sendFile(`${__dirname}/views/index.html`);
+    });
 
-let servidor = http.createServer(controlador);
-
-servidor.listen(8080); // 8080, 8000, 3000
-console.log('Conectado!!');
+    app.listen(8080);
+    console.log('Conectado!!')
